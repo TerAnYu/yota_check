@@ -8,9 +8,10 @@
 
 
 edate=`date`
-checkhost=ya.ru
+checkhost=http://ya.ru
 useragaent="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0"
-COMMANDACCESS="accept_lte=1&redirurl=$checkhost&city=nsk&connection_type=light&service_id=Sliders_Free_Temp"
+#COMMANDACCESS="accept_lte=1&redirurl=$checkhost&city=nsk&connection_type=light&service_id=Sliders_Free_Temp"
+COMMANDACCESS="redirurl=$checkhost&city=nsk&connection_type=light&service_id=Sliders_Free_Temp"
 CHECK="/usr/bin/curl -A "\"$useragaent\"""
 #CHECK="/usr/bin/wget -U \"$useragaent\""
 
